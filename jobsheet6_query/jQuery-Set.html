@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.3.1.js"></script>
+        <script>
+        $ (document) .ready (function () {
+        $ ("#btnl") . click (function () {
+            $ ("#test1") .text ("<b>Hello World</b>");
+        });
+        $ ("#btn2") .click (function () {
+            $ ("#test2").html ("<b>Hello World !< /b>");
+            });
+        $ ("#btn3") .click (function () {
+            $ ("#test3").val ("Polinema");
+        });
+    });
+
+
+</script>
+</head>
+<body>
+<p id="testl">This is the first paragraph .</p>
+<p id="test2">This is <b> another </b> paragraph .</p>
+
+<p>Your Name: <input type="text" id="test3"></p>
+
+<button id="btnl">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+
+    </body>
+</html>
