@@ -17,9 +17,9 @@
             <span id="email-error" style="color: red;"></span><br>
             <br>
 
-            <!-- <label for="password">Password:</label>
+            <label for="password">Password:</label>
             <input type="password" id="password" name="password">
-            <span id="password-error" style="color: red;"></span><br> -->
+            <span id="password-error" style="color: red;"></span><br>
 
             <input type="submit" value="Submit">
         </form>

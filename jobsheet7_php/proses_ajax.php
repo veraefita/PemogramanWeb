@@ -4,11 +4,11 @@
         $email = $_POST["email"];
         $errors = array();
 
-        // if (isset($_POST["password"])) {
-        //     $password = $_POST["password"];
-        // } else {
-        //     $password = "";
-        // }
+        if (isset($_POST["password"])) {
+            $password = $_POST["password"];
+        } else {
+            $password = "";
+        }
 
         //validasi nama
         if (empty($nama)) {
@@ -22,12 +22,12 @@
             $errors[] = "Format email tidak valid.";
         }
 
-        // //validasi password
-        // if (empty($password)) {
-        //     $errors[] = "Password harus diisi.";
-        // } elseif (strlen($password < 8)) {
-        //     $errors[] = "Password harus lebih dari 8 karakter.";
-        // }
+        //validasi password
+        if (empty($password)) {
+            $errors[] = "Password harus diisi.";
+        } elseif (strlen($password < 8)) {
+            $errors[] = "Password harus lebih dari 8 karakter.";
+        }
 
         //jika ada kesalahan validasi
         if (!empty($errors)) {
